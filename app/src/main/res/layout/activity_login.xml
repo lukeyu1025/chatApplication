@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/srcYellow"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="250dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_background"
+            android:src="@drawable/new_wine" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/cardView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/img_account_icon"
+        android:drawablePadding="3dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/img_password_icon"
+        android:drawablePadding="3dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/visibleLoginPassword"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@id/edt_password"
+        android:layout_alignBottom="@id/edt_password"
+        android:layout_marginRight="7dp"
+        app:srcCompat="@drawable/ic_baseline_visibility_24" />
+
+    <LinearLayout
+        android:id="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edt_password"
+        android:layout_marginTop="50dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:text="LOG IN"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:text="SIGN UP"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/ForgetPassword"
+        android:textColor="@color/srcRed"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:background="@color/srcYellow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_action_name"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:titleTextAppearance="@style/TitleTextSize"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Messages"
+        android:textSize="15dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/srcGreen"
+        android:layout_marginLeft="65dp"
+        android:textStyle="bold"/>
+
+        <Switch
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/switch1"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Notification"
+            android:drawableLeft="@drawable/img_notification_icon"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ADB5BD" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Appearance"
+        android:paddingVertical="15dp"
+        android:textColor="@color/srcGreen"
+        android:layout_marginLeft="65dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

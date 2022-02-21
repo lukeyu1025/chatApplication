@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/srcYellow"
+    tools:context=".Login">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_action_name"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:titleTextAppearance="@style/TitleTextSize"
+        app:titleTextColor="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="250dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:background="@drawable/icon_background"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_wine" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/editPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/edit_pic"
+        android:textColor="@color/srcGreen"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editPic"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/edt_background"
+        android:drawableLeft="@drawable/img_account_icon"
+        android:drawablePadding="3dp"
+        android:hint="Name"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:text="SAVE PROFILE"
+        android:textColor="@color/white" />
+</RelativeLayout>

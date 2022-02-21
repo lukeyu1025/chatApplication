@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/popup_background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN OUT?"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/srcGrey"
+        android:textSize="15dp"
+        android:text="Are you sure you want to sign out? Any unsaved change and unsent message will be deleted."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_popup_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:background="@drawable/btn_background"/>
+        <Button
+            android:id="@+id/btn_popup_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:background="@drawable/btn_background"
+            android:text="OK"/>
+    </LinearLayout>
+
+</LinearLayout>
