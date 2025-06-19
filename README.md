@@ -1,6 +1,6 @@
-# Chat Application
+# Realtime Chat App for Android
 
-This project is a simple Android chat application built with Kotlin and Firebase. It allows users to register, log in, and exchange messages in real time.
+This repository contains a lightweight chat client written in Kotlin. It uses Firebase Authentication, Realtime Database and Storage so users can register, upload a profile picture and exchange messages instantly. The project is intended as a concise example of basic Firebase integration on Android.
 
 ## Features
 
